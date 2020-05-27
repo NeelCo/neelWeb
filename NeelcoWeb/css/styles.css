@@ -1,0 +1,105 @@
+#page1 {
+  background-image:url(../images/logo.png);
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+.container-fluid  {
+
+padding: 4% 10% 20% 26%;
+  object-fit: cover;
+}
+
+.card-img{
+  height: 600px;
+  object-fit: cover;
+}
+
+.card-text{
+font-weight: bold;
+color: blue;
+font-family: 'Montserrat';
+padding-left: 10px;
+
+
+
+}
+.card-title{
+  color: goldenrod;
+  font-weight: bolder;
+  padding-left: 10px;
+  padding-top: 30px;
+  line-height: 1.5;
+}
+#text-Place{
+
+  position: fixed;
+  position: relative;
+  top: 20px;
+
+}
+
+
+
+ .navbar-color{
+  background-color: skyblue;
+}
+#na-brand{
+
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(24, 24, 190);
+  font-size: 26px;
+}
+
+
+#contactbtn{
+font-family:'Montserrat';
+
+}
+
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #d1d8df;
+  color: white;
+  text-align: center;
+
+}
+.row{
+  height: 6px;
+}
+.footer a{
+
+
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #f5f6fa;
+  text-align: center;
+  position: relative;
+  left: 55%;
+  bottom: 14px;
+  margin: 2px;
+
+  box-shadow: 1px 4px 2px 2px #dcdde1;
+
+}
+
+a i{
+  font-size: 15px;
+  padding-top: 12px;
+  transition: all 0.3s linear;
+  color: #0097e6;
+}
+a:hover i{
+
+  transform: scale(1.4);
+}
+
+
+
+
+
