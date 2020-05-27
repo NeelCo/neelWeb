@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContactPage</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!--Google font Link-->
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bungee+Shade&family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+<!--Fontawsom Link-->
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/fontawesome.min.css">
+<!-- before it was not working but after adding belowline my fonts started showing-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<!-- Page Links here-->
+<link rel="stylesheet" href="css/contactstyles.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="jquery.js"></script>
+</head>
+<body>
+  <header>
+      <!-- NavBar-->
+
+    <div class="container-fluid">
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light" >
+      <a class="navbar-brand" id="na-brand" href="#">NeelCo</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapsa navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item" id="items">
+          <a class="nav-link" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ABOUT US</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PRODUCTS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="androidapplication.html">Android Applications</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">CONTACT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BLOG</a>
+        </li>
+      </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Image Part-->
+   <div class="card text-white" id="imagecard">
+            <img class="card-img" src="images/foil.png" alt="Card image">
+            <div class="card-img-overlay" >
+              <h3 class="card-title">CONTACT US!</h3>
+              <p class="card-text">Please use email below or drop form to send  your query</p>
+              <p class="card-text"><a href="info@neelcoinc.com" id="link">info@neelcoinc.com</a></p>
+              <p class="card-text">Android Applications, System Software Services and  HR & Recruiter Services.</p>
+              <p class="card-text">NeelCo Inc, Dublin, California, USA</p>
+              <p class="card-text">+1 925 719 4564</p>
+                <!-- Email Part-->
+
+              <div class="row">
+                <div class="col-lg">
+                  <p>
+                  <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Drop Us a Line
+                  </a></p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      <div class="row">
+                        <div class="col-lg">
+                          <div id ="myalert" class="alert alert-danger collapse">
+                            <a id="linkclose" href="#" class="close">&times;</a>
+                          </div>
+                         </div>
+                        </div>
+                      <form>
+
+                        <p>
+                        <div class="form-group" >
+                          <input type="text" class="form-control" id="textName" placeholder="Name">
+                        </div>
+
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="email"  placeholder="Enter Your email Adrress">
+                        <small id="submit" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+
+
+                      <div class="form-group">
+                        <textarea class="form-control" id="textMessage" rows="10" placeholder="Your Message:"></textarea>
+                      </div>
+
+                      <button type="submit" class="btn btn-primary"  id="submit">Submit</button>
+                     <!-- <button type="submit" class="btn btn-primary">Cancel</button>-->
+                      </p>
+                        <!-- Aleart Part-->
+
+                      <div class="container" id="alertContainer">
+                      <div class="row">
+                        <div class="col">
+                          <div id ="myalert" class="alert alert-danger collapse">
+                            <a id="linkclose" href="#" class="close">&times;</a>
+                          </div>
+                          </div>
+                         </div>
+                        </div>
+                    </form>
+
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+                </div>
+
+          </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+  <section id="mallingSection"></section>
+  <section id="footer-sec">
+    <footer class="footer">
+      <id class="container align-center ">
+        <id class="row">
+
+          <a href="https://www.facebook.com/neelcoinc/">
+            <i class="fab  fa-facebook-f"></i>
+          </a>
+
+          <a href="https://twitter.com/neelcoinc">
+          <i class="fab   fa-twitter"></i>
+          </a>
+
+        <a href="https://www.linkedin.com/">
+         <i class="fab  fa-linkedin-in"></i>
+        </a>
+       </id>
+      </id>
+      <!-- Copyright -->
+      <div class="container-fluid text-center bg-secondary py-2">© 2020 Copyright: All rights are reserved.
+      </div>
+      <!-- Copyright -->
+      </footer>
+  </section>
+
+  <script type="text/javascript">
+    $("form").submit(function(e){
+      e.preventDefault();
+
+      var error = "";
+
+      if($("#textName").val() == ""){
+        error += "<br>The Name field is required";
+
+      }
+      if($("#textMessage").val() == ""){
+        error += "<br>The Message field is required";
+
+      }
+      if(error != ""){
+
+          $("#myalert").show('fade');
+          $("#myalert").html('<a id="linkclose" href="#" class="close">&times;</a> <strong>Oh Wooops!</strong>'+ error +'');
+         //$("#error").html('<div class="alert alert-danger" role="alert"><strong> woops!</strong> '+ error +'</div>');
+
+        setTimeout(function (){
+          $('#myalert').hide('fade');
+        },2000);
+
+
+      }
+
+        $('#linkclose').click(function (){
+      $('#myalert').hide('fade');
+
+    });
+
+      });
+
+</script>
+
+</body>
+</html>
